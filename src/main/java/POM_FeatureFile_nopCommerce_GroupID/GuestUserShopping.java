@@ -56,6 +56,7 @@ public class GuestUserShopping extends Utils
         sendText(_billingAddressZipCode, "CR0 1DY");
         sendText(_phoneNumber,"07825122425");
         clickOnElement(_continueShopping);
+        waitForElementVisible(_continueShopping2,5);
         clickOnElement(_continueShopping2);
         clickOnElement(_selectPaymentMethod);
         clickOnElement(_continuePaymentPage);
@@ -66,6 +67,7 @@ public class GuestUserShopping extends Utils
         selectByValue(_cardExpiryYear,loadProps.getProperty("expiryYear"));
         sendText(_cardCode,loadProps.getProperty("CVV_Code"));
         clickOnElement(_clickContinuePaymentStage);
+        waitForElementVisible(_confirmShopping,5);
         clickOnElement(_confirmShopping);
     }
 }

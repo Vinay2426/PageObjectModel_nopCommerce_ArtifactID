@@ -4,7 +4,7 @@ Feature: user should able to buy product
   @registeredCustomer
   Scenario: user should able to buy product after Registration
     Given user is on register page
-    When user fill all the mandatory fields and click on continue xyz
+    When user fill all the mandatory fields and click on continue
     And go to homepage
     And user select product and buy
     Then verify user placed successful order

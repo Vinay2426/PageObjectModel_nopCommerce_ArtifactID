@@ -4,7 +4,7 @@ Feature: user should able to refer product
   @referProduct
   Scenario: user should able to refer product to friend after registering account
     Given user is on register page
-    When user fill all the mandatory fields and click on continue abcd
+    When user fill all the mandatory fields and click on continue
     And select product and refer it to a friend
     Then user should get successful message of referring product
 

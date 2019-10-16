@@ -13,13 +13,11 @@ public class AccountRegistration extends Utils
     private By _confirmPassword = By.xpath("//input[@id='ConfirmPassword']");
     private By _clickOnRegister = By.id("register-button");
 
-    private static String timeStamp =randomDate();
-
     public void userEnterRegistrationDetail()
     {
         sendText(_firstName,loadProps.getProperty("firstName"));
         sendText(_lastName, loadProps.getProperty("lastName"));
-        sendText(_email,"testvinus"+timeStamp+"@alperton.com");
+        sendText(_email,randomDate()+loadProps.getProperty("email"));
         sendText(_password,"alpertonHouse");
         sendText(_confirmPassword,"alpertonHouse");
         clickOnElement(_clickOnRegister);

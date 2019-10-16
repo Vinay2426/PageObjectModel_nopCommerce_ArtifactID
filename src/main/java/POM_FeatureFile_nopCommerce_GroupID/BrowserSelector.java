@@ -11,12 +11,13 @@ public class BrowserSelector extends Utils
 
     public void setUpBrowser()
     {
+        //
+        // String browser = System.getProperty("browser");
         String browser = loadProps.getProperty("browser");
 
         if (browser.equalsIgnoreCase("firefox"))
         {
             System.setProperty("webdriver.gecko.driver", "src\\test\\Resources\\BrowserDrivers\\geckodriver.exe");
-
             driver = new FirefoxDriver();
         }
         else if (browser.equalsIgnoreCase("chrome"))
@@ -26,8 +27,8 @@ public class BrowserSelector extends Utils
         }
         else if (browser.equalsIgnoreCase("ie"))
         {
-            System.setProperty("webdriver.ie.driver", "src\\test\\Resources\\BrowserDriver\\IEDriverServer.exe");
-            driver = new InternetExplorerDriver();
+            System.setProperty("webdriver.ie.driver", "src\\test\\Resources\\BrowserDrivers\\IEDriverServer.exe");
+            driver= new InternetExplorerDriver();
         }
         else if (browser.equalsIgnoreCase("opera"))
         {

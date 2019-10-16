@@ -270,4 +270,21 @@ public class Utils extends BasePage
         Assert.assertTrue(driver.getCurrentUrl().contains(text));
     }
 
+    //capture screenshot method
+//    public void tearDown(Scenario scenario) {
+//        if (scenario.isFailed()) {
+//            // Take a screenshot...
+//
+//            // final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//            TakesScreenshot scrShot = ((TakesScreenshot) driver);
+//            File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
+//            File DestFile = new File("src\\test\\Resources\\ScreenShots" + randomDate() + ".png");
+//
+//            //Copy file at destination
+//            try {
+//                FileUtils.copyFile(SrcFile, DestFile);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+
 }

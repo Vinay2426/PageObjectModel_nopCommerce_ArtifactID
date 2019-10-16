@@ -90,18 +90,4 @@ public class MyStepdefs
         homePage.clickOnApparelLink();
         guestUserShopping.guestShopsShoes();
     }
-
-    @When("^user fill all the mandatory fields and click on continue abcd$")
-    public void userFillAllTheMandatoryFieldsAndClickOnContinueAbcd()
-    {
-        accountRegistrationResultPage.verifyUserIsOnRegisterPage();
-        accountRegistration.userEnterRegistrationDetail();
-    }
-
-    @When("^user fill all the mandatory fields and click on continue xyz$")
-    public void userFillAllTheMandatoryFieldsAndClickOnContinueXyz()
-    {
-        accountRegistrationResultPage.verifyUserIsOnRegisterPage();
-        accountRegistration.userEnterRegistrationDetail();
-    }
 }

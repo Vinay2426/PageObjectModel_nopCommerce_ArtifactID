@@ -269,6 +269,11 @@ public class Utils extends BasePage
     {
         Assert.assertTrue(driver.getCurrentUrl().contains(text));
     }
+    //assert equal URL (StringURL) {}
+    public void assertEqualURL(String expected)
+    {
+        Assert.assertEquals(driver.getCurrentUrl(),expected);
+    }
 
     //capture screenshot method
 //    public void tearDown(Scenario scenario) {

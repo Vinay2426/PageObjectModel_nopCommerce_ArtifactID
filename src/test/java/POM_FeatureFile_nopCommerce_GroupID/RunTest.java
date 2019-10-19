@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = ".", tags = "@all") //@register, @referProduct, @referProductWithoutRegistration, @registeredCustomer, @guestCustomer
+@CucumberOptions(features = ".", tags = "@test") //@register, @referProduct, @referProductWithoutRegistration, @registeredCustomer, @guestCustomer
 public class RunTest
 {
 }

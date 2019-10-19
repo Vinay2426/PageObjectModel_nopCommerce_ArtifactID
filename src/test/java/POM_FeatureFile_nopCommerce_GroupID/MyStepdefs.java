@@ -1,11 +1,12 @@
 package POM_FeatureFile_nopCommerce_GroupID;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class MyStepdefs
+public class MyStepdefs extends Utils
 {
     HomePage homePage = new HomePage();
     AccountRegistration accountRegistration = new AccountRegistration();
@@ -89,5 +90,17 @@ public class MyStepdefs
     {
         homePage.clickOnApparelLink();
         guestUserShopping.guestShopsShoes();
+    }
+
+    @When("^user click on \"([^\"]*)\"link$")
+    public void userClickOnLink(String category)
+    {
+        homePage.clickOnCategory(category);
+    }
+
+    @Then("^user should able to navigate to \"([^\"]*)\"$")
+    public void userShouldAbleToNavigateTo(String related_page)
+    {
+        assertEqualURL(related_page);
     }
 }

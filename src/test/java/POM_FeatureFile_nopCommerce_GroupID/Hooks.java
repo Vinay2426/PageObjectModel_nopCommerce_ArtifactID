@@ -40,7 +40,7 @@ public class Hooks extends BasePage {
             {
                 e.printStackTrace();
             }
-            driver.quit();
         }
+        driver.quit();
     }
 }

@@ -26,4 +26,9 @@ public class HomePage extends Utils
     {
         clickOnElement(_apparelLink);
     }
+    public void clickOnComputerLink() {clickOnElement(_computerLink);}
+    public void clickOnCategory(String category)
+    {
+        clickOnElement(By.linkText(category));
+    }
 }
